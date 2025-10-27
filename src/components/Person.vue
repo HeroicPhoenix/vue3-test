@@ -1,27 +1,18 @@
 <template>
     <div class="person">
-        <h2>姓名：{{name}}</h2>
-        <h2>年龄：{{age}}</h2>
-        <button @click="showTel">查看联系方式</button>
+        姓：<input type="text"></input>
+        <br></br>
+        名：<input type="text"></input>
+        <br></br>
+        姓名：<span>？？？</span>
     </div>
 </template>
 
-<script>
-    export default {
-        name: 'Person',
-        data(){
-            return {
-                name: '张三',
-                age: 18,
-                tel: '13812345678'
-            }
-        },
-        methods:{
-            showTel(){
-                alert(this.tel)
-            }
-        }
-    }
+<script lang='ts' setup name="Person">
+    import { ref, reactive, toRefs, toRef } from 'vue'
+    
+    
+
 </script>
 
 <style>
@@ -30,5 +21,8 @@
     box-shadow: 0 0 10px;
     border-radius: 10px;
     padding: 20px;
+}
+.li{
+    font-size: 20px;
 }
 </style>

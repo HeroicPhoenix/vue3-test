@@ -1,15 +1,17 @@
 <template>
     <div class="app">
         hello
+        <Games></Games>
         <Person></Person>
     </div>
 </template>
 
 <script>
+    import Games from "./components/Games.vue"
     import Person from "./components/Person.vue"
     export default {
         name: 'App',
-        components: {Person}
+        components: {Games, Person}
     }
 </script>
 
